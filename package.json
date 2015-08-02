@@ -1,0 +1,35 @@
+{
+  "name": "storage.js",
+  "version": "0.1.0",
+  "description": "A simple wrapper for the most common cloud file storage providers.",
+  "main": "storage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://groundh0g@github.com/groundh0g/Storage.js.git"
+  },
+  "keywords": [
+    "google-drive",
+    "onedrive",
+    "dropbox",
+    "icloud",
+    "github",
+    "bitbucket",
+    "zip"
+  ],
+  "author": "@groundh0g",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/groundh0g/Storage.js/issues"
+  },
+  "homepage": "https://github.com/groundh0g/Storage.js#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.3",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-jasmine": "^0.3.6"
+  }
+}
