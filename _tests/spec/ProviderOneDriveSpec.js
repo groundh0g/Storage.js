@@ -5,7 +5,9 @@ describe("OneDrive Provider", function () {
         provider = storageProviders["OneDrive"];
     });
 
-    if(provider) {
+    it(SpecInfoStorageApiKey(STORAGE_API_KEY_ONEDRIVE, "ONEDRIVE"), function() { expect(true).toBeTruthy() });
+
+    if(STORAGE_API_KEY_ONEDRIVE) {
         it("should NOT be falsy, since provider instance is valid", function () {
             expect(provider).not.toBeFalsy();
         });

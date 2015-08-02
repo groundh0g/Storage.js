@@ -5,7 +5,9 @@ describe("Google Drive Provider", function () {
         provider = storageProviders["Google Drive"];
     });
 
-    if(provider) {
+    it(SpecInfoStorageApiKey(STORAGE_API_KEY_GOOGLE_DRIVE, "GOOGLE_DRIVE"), function() { expect(true).toBeTruthy() });
+
+    if(STORAGE_API_KEY_GOOGLE_DRIVE) {
         it("should NOT be falsy, since provider instance is valid", function () {
             expect(provider).not.toBeFalsy();
         });

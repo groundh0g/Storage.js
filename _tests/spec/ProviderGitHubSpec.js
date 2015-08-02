@@ -5,7 +5,9 @@ describe("GitHub Provider", function () {
         provider = storageProviders["GitHub"];
     });
 
-    if(provider) {
+    it(SpecInfoStorageApiKey(STORAGE_API_KEY_GITHUB, "GITHUB"), function() { expect(true).toBeTruthy() });
+
+    if(STORAGE_API_KEY_BITBUCKET) {
         it("should NOT be falsy, since provider instance is valid", function () {
             expect(provider).not.toBeFalsy();
         });

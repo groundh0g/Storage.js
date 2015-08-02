@@ -5,7 +5,9 @@ describe("Dropbox Provider", function () {
         provider = storageProviders["Dropbox"];
     });
 
-    if(provider) {
+    it(SpecInfoStorageApiKey(STORAGE_API_KEY_DROPBOX, "DROPBOX"), function() { expect(true).toBeTruthy() });
+
+    if(STORAGE_API_KEY_DROPBOX) {
         it("should NOT be falsy, since provider instance is valid", function () {
             expect(provider).not.toBeFalsy();
         });
